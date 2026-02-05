@@ -1,1 +1,1097 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thợ Sửa Máy Lọc Nước Chuyên Nghiệp | Tận Tâm - Uy Tín - Nhanh Chóng</title>
+  <meta name="description" content="Dịch vụ sửa chữa máy lọc nước tại nhà chuyên nghiệp. Hơn 12 năm kinh nghiệm. Phục vụ 24/7. Có mặt sau 30 phút. Liên hệ: 0345035422 - 0939930582">
+  
+  <style>
+    /* ================= RESET ================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    :root {
+      --primary: #0EA5E9;
+      --primary-dark: #0284C7;
+      --secondary: #10B981;
+      --accent: #F59E0B;
+      --text: #0F172A;
+      --text-light: #64748B;
+      --white: #FFFFFF;
+      --bg: #F8FAFC;
+      --border: rgba(15, 23, 42, 0.1);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-sm);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top-bar {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 32px;
+    }
+
+    .nav-contact {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-call {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-call:hover {
+      background: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+      padding-top: 130px;
+      overflow: hidden;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-text {
+      color: var(--white);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-title {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+    }
+
+    .hero-desc {
+      font-size: 18px;
+      margin-bottom: 32px;
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+
+    .hero-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 36px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-info {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .profile-avatar {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--secondary) 0%, #059669 100%);
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 56px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-name {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .profile-title {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 16px;
+    }
+
+    .profile-exp {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--accent);
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid var(--accent);
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-btn {
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+      padding: 16px 24px;
+      border-radius: 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .icon-zalo { background: linear-gradient(135deg, #0068FF 0%, #0052CC 100%); }
+    .icon-phone { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+    .icon-facebook { background: linear-gradient(135deg, #1877F2 0%, #0C63D4 100%); }
+
+    .contact-info-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .contact-label {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-value {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    /* ================= SECTION ================= */
+    .section {
+      padding: 100px 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .section-label {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 900;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .section-desc {
+      font-size: 18px;
+      color: var(--text-light);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ================= SERVICES ================= */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ================= BRANDS ================= */
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .brand-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .brand-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* ================= PROCESS ================= */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+
+    .process-step {
+      position: relative;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 2px solid var(--border);
+    }
+
+    .step-number {
+      position: absolute;
+      top: -16px;
+      left: 32px;
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--white);
+      box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    }
+
+    .process-step h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 24px 0 12px;
+      color: var(--text);
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ================= WHY CHOOSE ================= */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      background: linear-gradient(135deg, var(--white) 0%, #F1F5F9 100%);
+      border-radius: 20px;
+      padding: 32px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .why-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .why-card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .why-card p {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ================= CTA ================= */
+    .cta {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 100px 30px;
+      text-align: center;
+      margin: 100px auto;
+      border-radius: 30px;
+      max-width: 1200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cta h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 900;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      line-height: 1.7;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cta .btn-white {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+      background: var(--text);
+      color: var(--white);
+      padding: 60px 30px 30px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .footer-desc {
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .footer-contact {
+      list-style: none;
+    }
+
+    .footer-contact li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-contact li a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-contact li a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      .hero-features {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-contact {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .section {
+        padding: 60px 20px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="top-bar">
+      🚨 Khẩn cấp 24/7 - Có mặt sau 30 phút gọi | Hotline: <strong>0345035422</strong>
+    </div>
+    <nav class="nav">
+      <div class="logo">
+        <span class="logo-icon">💧</span>
+        <span>Thợ Sửa Máy Lọc Nước</span>
+      </div>
+      <div class="nav-contact">
+        <a href="tel:0345035422" class="btn-call">
+          📞 Gọi ngay: 034 503 5422
+        </a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">⭐ Hơn 12 Năm Kinh Nghiệm</span>
+        <h1 class="hero-title">Dịch Vụ Sửa Chữa Máy Lọc Nước Chuyên Nghiệp</h1>
+        <p class="hero-desc">
+          Chuyên sửa chữa, bảo dưỡng máy lọc nước RO tất cả các hãng: Kangaroo, Karofi, 
+          Sunhouse, A.O Smith, Tân Á... Phục vụ tận tâm, giá cả hợp lý, bảo hành dài hạn.
+        </p>
+
+        <div class="hero-features">
+          <div class="feature-item">
+            <div class="feature-icon">⚡</div>
+            <span>Có mặt sau 30 phút</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔧</div>
+            <span>Sửa tại nhà miễn phí</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✅</div>
+            <span>Linh kiện chính hãng</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <span>Bảo hành 6-12 tháng</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="tel:0345035422" class="btn btn-white">📞 Gọi ngay</a>
+          <a href="https://zalo.me/0939930582" class="btn btn-outline">💬 Chat Zalo</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-info">
+          <div class="profile-avatar">👨‍🔧</div>
+          <h2 class="profile-name">Thợ Chuyên Nghiệp</h2>
+          <p class="profile-title">Kỹ thuật viên máy lọc nước</p>
+          <span class="profile-exp">📅 12+ năm kinh nghiệm</span>
+        </div>
+
+        <div class="contact-grid">
+          <a href="https://zalo.me/0939930582" class="contact-btn">
+            <div class="contact-icon icon-zalo">💬</div>
+            <div class="contact-info-text">
+              <div class="contact-label">Chat Zalo</div>
+              <div class="contact-value">093 993 0582</div>
+            </div>
+          </a>
+
+          <a href="tel:0345035422" class="contact-btn">
+            <div class="contact-icon icon-phone">📞</div>
+            <div class="contact-info-text">
+              <div class="contact-label">Hotline 24/7</div>
+              <div class="contact-value">034 503 5422</div>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/share/1DbreypnwA/?mibextid=wwXIfr" target="_blank" class="contact-btn">
+            <div class="contact-icon icon-facebook">f</div>
+            <div class="contact-info-text">
+              <div class="contact-label">Facebook</div>
+              <div class="contact-value">Nhắn tin FB</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-header">
+      <p class="section-label">Dịch vụ</p>
+      <h2 class="section-title">Các Dịch Vụ Chuyên Nghiệp</h2>
+      <p class="section-desc">
+        Chúng tôi khắc phục mọi sự cố về máy lọc nước nhanh chóng, 
+        chuyên nghiệp với giá cả hợp lý nhất
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Sửa máy không ra nước</h3>
+        <p>Khắc phục triệt để máy không ra nước, nước chảy yếu, lọc chậm. Kiểm tra bơm, màng RO, van điện từ.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <h3>Sửa máy rò rỉ nước</h3>
+        <p>Xử lý rò rỉ tại các khớp nối, vỏ cốc lọc, đường ống. Thay thế O-ring, gasket hư hỏng.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔊</div>
+        <h3>Sửa máy kêu to, rung lắc</h3>
+        <p>Khắc phục máy kêu tạch tạch, tít tít. Kiểm tra và thay bơm tăng áp, van điện từ.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Sửa máy không vào điện</h3>
+        <p>Kiểm tra nguồn điện, công tắc áp lực, mạch điều khiển. Khắc phục chập cháy, rò điện.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <h3>Thay lõi lọc định kỳ</h3>
+        <p>Tư vấn và thay lõi lọc đúng thời hạn. Lõi chính hãng, giá tốt nhất thị trường.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <h3>Bảo dưỡng, bảo trì</h3>
+        <p>Vệ sinh, kiểm tra, bảo dưỡng toàn bộ hệ thống. Đảm bảo máy hoạt động ổn định lâu dài.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚰</div>
+        <h3>Sửa máy ra nhiều nước thải</h3>
+        <p>Điều chỉnh tỷ lệ nước lọc/nước thải. Kiểm tra màng RO, van hạn chế dòng chảy.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3>Thay thế linh kiện</h3>
+        <p>Thay bơm, màng RO, van điện từ, công tắc áp lực... Linh kiện chính hãng, bảo hành.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="section" style="background: var(--white); margin: 0; max-width: 100%; padding: 80px 30px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <p class="section-label">Hãng máy lọc nước</p>
+        <h2 class="section-title">Sửa Chữa Tất Cả Các Hãng</h2>
+        <p class="section-desc">
+          Chuyên sửa chữa máy lọc nước RO của tất cả các thương hiệu nổi tiếng tại Việt Nam
+        </p>
+      </div>
+
+      <div class="brands-grid">
+        <div class="brand-card">
+          <div class="brand-icon">🦘</div>
+          <div class="brand-name">Kangaroo</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">💧</div>
+          <div class="brand-name">Karofi</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🏠</div>
+          <div class="brand-name">Sunhouse</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">⚡</div>
+          <div class="brand-name">A.O Smith</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🌊</div>
+          <div class="brand-name">Tân Á</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">🔷</div>
+          <div class="brand-name">Panasonic</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">💎</div>
+          <div class="brand-name">Geyser</div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">⭐</div>
+          <div class="brand-name">Jenpec</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="section-header">
+      <p class="section-label">Quy trình</p>
+      <h2 class="section-title">Quy Trình Làm Việc Chuyên Nghiệp</h2>
+      <p class="section-desc">
+        Minh bạch, rõ ràng từng bước - Không phát sinh chi phí
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h3>Tiếp nhận yêu cầu</h3>
+        <p>Quý khách gọi điện hoặc nhắn tin mô tả tình trạng máy lọc nước. Chúng tôi tư vấn sơ bộ qua điện thoại.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h3>Có mặt tại nhà</h3>
+        <p>Kỹ thuật viên đến tận nơi sau 30 phút. Kiểm tra kỹ lưỡng, chẩn đoán chính xác nguyên nhân hỏng hóc.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h3>Báo giá minh bạch</h3>
+        <p>Thông báo nguyên nhân, phương án sửa chữa và chi phí cụ thể. Chỉ sửa khi khách hàng đồng ý.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h3>Sửa chữa & bàn giao</h3>
+        <p>Tiến hành sửa chữa nhanh chóng. Kiểm tra kỹ, bàn giao và hướng dẫn sử dụng. Viết phiếu bảo hành.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section" style="background: var(--white); margin: 0; max-width: 100%; padding: 100px 30px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header">
+        <p class="section-label">Cam kết</p>
+        <h2 class="section-title">Vì Sao Chọn Chúng Tôi?</h2>
+        <p class="section-desc">
+          Những giá trị cốt lõi mà chúng tôi cam kết mang đến cho mọi khách hàng
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">⚡</span>
+          <h3>Nhanh chóng - Có mặt sau 30 phút</h3>
+          <p>Phục vụ 24/7 kể cả ngày lễ, tết. Đội ngũ kỹ thuật luôn sẵn sàng, có mặt tại nhà sau 30 phút gọi.</p>
+        </div>
+
+        <div class="why-card">
+          <span class="why-icon">👨‍🔧</span>
+          <h3>Kỹ thuật viên chuyên nghiệp</h3>
+          <p>Hơn 12 năm kinh nghiệm. Được đào tạo bài bản, nắm vững kỹ thuật. Bắt đúng lỗi, xử lý triệt để.</p>
+        </div>
+
+        <div class="why-card">
+          <span class="why-icon">✅</span>
+          <h3>Linh kiện chính hãng 100%</h3>
+          <p>Cam kết sử dụng linh kiện chính hãng có tem mác, nguồn gốc rõ ràng. Bảo hành toàn quốc.</p>
+        </div>
+
+        <div class="why-card">
+          <span class="why-icon">💰</span>
+          <h3>Giá cả hợp lý - Minh bạch</h3>
+          <p>Báo giá rõ ràng trước khi sửa. Không phát sinh chi phí. Giá cả cạnh tranh nhất thị trường.</p>
+        </div>
+
+        <div class="why-card">
+          <span class="why-icon">🛡️</span>
+          <h3>Bảo hành dài hạn 6-12 tháng</h3>
+          <p>Bảo hành linh kiện thay thế 6-12 tháng. Hỗ trợ miễn phí trong thời gian bảo hành.</p>
+        </div>
+
+        <div class="why-card">
+          <span class="why-icon">🎯</span>
+          <h3>Tận tâm - Chu đáo</h3>
+          <p>Phục vụ tận tình, nhiệt tình. Tư vấn chân thành. Luôn đặt lợi ích khách hàng lên hàng đầu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Máy Lọc Nước Gặp Sự Cố? Gọi Ngay!</h2>
+      <p>
+        Chúng tôi sẵn sàng hỗ trợ 24/7. Có mặt sau 30 phút gọi. 
+        <strong>Miễn phí kiểm tra - Báo giá minh bạch - Bảo hành dài hạn.</strong>
+      </p>
+
+      <div class="cta-buttons">
+        <a href="tel:0345035422" class="btn btn-white">📞 Gọi ngay: 034 503 5422</a>
+        <a href="https://zalo.me/0939930582" class="btn btn-outline">💬 Chat Zalo: 093 993 0582</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Thợ Sửa Máy Lọc Nước</h3>
+        <p class="footer-desc">
+          Dịch vụ sửa chữa máy lọc nước chuyên nghiệp, uy tín với hơn 12 năm kinh nghiệm. 
+          Phục vụ tận tâm, giá cả hợp lý, bảo hành dài hạn.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Dịch vụ</h3>
+        <ul class="footer-contact">
+          <li>🔧 Sửa máy không ra nước</li>
+          <li>💧 Sửa máy rò rỉ nước</li>
+          <li>🔊 Sửa máy kêu to, rung</li>
+          <li>🔄 Thay lõi lọc định kỳ</li>
+          <li>🛠️ Bảo dưỡng toàn diện</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Liên hệ</h3>
+        <ul class="footer-contact">
+          <li>📞 <a href="tel:0345035422">Hotline: 034 503 5422</a></li>
+          <li>💬 <a href="https://zalo.me/0939930582">Zalo: 093 993 0582</a></li>
+          <li>f <a href="https://www.facebook.com/share/1DbreypnwA/?mibextid=wwXIfr" target="_blank">Facebook Page</a></li>
+          <li>📍 Phục vụ toàn khu vực TP.HCM</li>
+          <li>⏰ 24/7 - Kể cả ngày lễ tết</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Khu vực phục vụ</h3>
+        <p class="footer-desc">
+          Quận 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, Tân Bình, Tân Phú, 
+          Bình Thạnh, Phú Nhuận, Gò Vấp, Thủ Đức và các quận huyện lân cận.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dịch Vụ Sửa Máy Lọc Nước Chuyên Nghiệp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Click to call tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.addEventListener('click', function() {
+        console.log('Call button clicked:', this.href);
+      });
+    });
+
+    // Zalo tracking
+    document.querySelectorAll('a[href*="zalo.me"]').forEach(link => {
+      link.addEventListener('click', function() {
+        console.log('Zalo button clicked:', this.href);
+      });
+    });
+  </script>
+
+</body>
+</html>
